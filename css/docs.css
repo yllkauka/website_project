@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Changa One', cursive; font-family: 'Inter', sans-serif;
+font-family: 'Nunito Sans', sans-serif; */
+body {font-family: 'Nunito Sans', sans-serif;}
+a{color:#2FB685; text-decoration: none;}
+a:hover,
+a:focus{text-decoration: none;color:#2FB685;}
+img {max-width: 100%;}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ opacity: 1 !important; color: rgba(0,0,0,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+ opacity: 1 !important;color: rgba(0,0,0,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  opacity: 1 !important;color: rgba(0,0,0,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  opacity: 1 !important;color: rgba(0,0,0,0.5);
+}
+button:focus {outline: none; }
+input:focus {outline: none;}
+.btn:focus {outline: none;}
+.btn:active:focus {outline: none;}
+textarea:focus {outline: none;}
+input{-webkit-appearance: none; border-radius: 0px;}
+textarea{-webkit-appearance: none; border-radius: 0px;}
+
+/* header css */
+.header {position: relative;left: 0;top: 0; padding:0px 0px; z-index: 9999;width: 100%;display:block;transition: all 0.3s ease-in-out 0s; background: #fff;}
+/*.header.sticky{background: #0071bc; position: fixed;}*/
+.header-logo img {max-width:151px;}
+.header-row {align-items: center;}
+.header .nav {float: none;margin: 0;padding-top: 0; justify-content: flex-end;}
+.header .nav > li {float:none;padding:0px 0px;}
+.header .nav > li > a {color:#181818;padding:48px 22px;position: relative; font-size: 18px; font-weight: 500; text-transform:uppercase; display: flex; line-height: normal;}
+.header .nav > li.active > a,
+.header .nav > li > a:hover, 
+.header .nav > li > a:focus{background:transparent;color:#2FB685}
+.header .nav > li.active > a{font-weight: 700;}
+.header .header-navigation {display: flex;justify-content: flex-end;align-items: center;}
+
+.header-lang {position: relative;margin: 0 0;}
+.header-lang .lang-text {padding: 10px 22px 10px 22px;display: inline-block;font-size: 18px;line-height: normal;position: relative;cursor: pointer;}
+.header-lang .lang-text:before {position: absolute;content: "";border-width: 8px 6px;border-style: solid;border-color: #181818 transparent transparent;right: 5px;top: 50%;margin-top: -4px;}
+.header-lang .lang-dropdown {position: absolute;left: 0;top: 100%;background: #fff;display: flex;flex-direction: column;padding: 0 20px;box-shadow: 0 3px 6px rgb(0 0 0 / 20%); pointer-events:none; visibility: hidden; opacity: 0; transition: all 0.3s ease-out 0s;}
+.header-lang:hover .lang-dropdown{pointer-events:auto; visibility:visible; opacity:1;}
+.header-lang .lang-dropdown a {font-size: 18px;color: #181818;display: flex;padding: 5px 0;}
+.header-lang .lang-dropdown a:hover,
+.header-lang .lang-dropdown a.selected{color:#2FB685;;}
+.header-button {padding-left: 100px;}
+.header-button .donate-btn {display: flex;height: 64px;width: 200px;align-items: center;justify-content: center;background: #2FB685;color: #fff;border-radius: 10px;padding-left: 15px;text-transform: uppercase;font-size: 18px;overflow: hidden; font-family: 'Changa One', cursive; box-shadow: 0 3px 6px rgb(0 0 0 / 0%); transition: all 0.3s ease-out 0s; white-space: pre;}
+.header-button .donate-btn:hover {box-shadow: 0 6px 6px rgb(0 0 0 / 20%);}
+.header-button .donate-btn .icon {width: 63px;background: #008053;margin-left: auto;display: flex;height: 100%;align-items: center;justify-content: center;}
+
+
+/* header end */
+/* homepage main banner */
+.main-banner-section {position: relative; width:100%;}
+.main-banner-section .slide_item{position: relative;}
+.main-banner-section > img {max-height: calc(100vh - 120px);object-fit: cover;min-height: 700px; width:100%;}
+
+.main-banner-section .banner-caption {width:100%;color: #fff; position: absolute; left: 0px; top: 50%; transform: translateY(-50%);}
+.banner-caption .caption_box {max-width: 630px;}
+.caption_box h2 {font-size: 72px;color: #fff;line-height: 1.2;margin: 0px 0 30px;font-weight: normal;font-family: 'Changa One';}
+.caption_box p {font-size: 24px;line-height: 1.5;}
+.caption_box .read-more {text-transform: uppercase;font-size: 21px;line-height: 28px;display: flex;text-decoration: underline;font-family: 'Changa One';margin: 50px 0 50px;}
+.caption_box .icon-btn{min-width: 260px;}
+
+/* btn css */
+.icon-btn {display: flex;height: 64px;width: 200px;align-items: center;justify-content: center;background: #2FB685;color: #fff;border-radius: 10px;text-transform: uppercase;font-size: 18px;overflow: hidden; font-family: 'Changa One', cursive; box-shadow: 0 3px 6px rgb(0 0 0 / 0%); transition: all 0.3s ease-out 0s; white-space: pre;}..icon-btn:hover {box-shadow:1px 4px 12px rgba(47, 182, 133, 0.8);}
+.icon-btn span:first-child {width: calc(100% - 63px);text-align: center;}
+.icon-btn:hover {box-shadow:1px 4px 12px rgba(47, 182, 133, 0.8); color: #fff;}
+.icon-btn .icon {width: 63px;background: #008053;margin-left: auto;display: flex;height: 100%;align-items: center;justify-content: center;}
+
+/* service section  */
+.section {display: block;width: 100%;padding:60px 0;}
+.section-title {text-align: left;margin: 0 0 60px;position: relative;}
+.section-title h2 {margin: 0;font-size: 64px;text-transform: uppercase;color: #181818;display: inline-block;font-family: 'Changa One';font-weight: normal;line-height: 1;}
+
+.service-wrapper {margin-top:60px;}
+.service-list{display: flex; margin: 0 -7px -15px; flex-wrap: wrap;}
+.service-list .service-item{padding:0 7px; width: 33.33%; margin-bottom:15px;}
+.service-item .service-box{background: #fff; box-shadow:4px 4px 24px rgba(90, 122, 152, 0.4);border-radius:8px;transition: all 0.3s ease-in-out 0s;height: 100%;position: relative;padding:0; overflow: hidden;}
+.service-item .service-box:hover{transform: translateY(-10px); box-shadow:4px 4px 24px rgba(90, 122, 152, 0.7)}
+.service-item .service-img {display: block;width: 100%;position: relative;padding-bottom:85%;background-size: cover;background-repeat: no-repeat;background-position: center;}
+.service-item .service-info {padding:25px 30px;}
+.service-item .service-box p {font-size: 18px;color: #181818;line-height: 24px;}
+
+/* donation section */
+.payment-list {display: flex;margin: 0 auto;max-width: 1070px;justify-content: center;}
+.payment-list .payment-item {width: 20%;padding: 0 15px;}
+.payment-list .payment-item .payment-box {display: flex;flex-direction: column;justify-content: space-between; background:url(../images/gradiant.png); border: 5px solid #008053;height: 100%;box-shadow: 1px 4px 8px rgb(0 0 0 / 30%);border-radius: 8px;text-align: center;padding:30px 0 20px;color: #fff; transition: all 0.3s ease-out 0s;  transform: translateY(0px);}
+.payment-list .payment-item .payment-box:hover {transform: translateY(-10px);}
+.payment-img {height: 60px;display: flex;justify-content: center;align-items: center;}
+.payment-box h4 {font-size: 16px;line-height: 28px;color: #2FB685;margin: 0;display: inline-block;position: relative;font-weight: 700;margin-top: 20px;}
+.payment-box h4:after {content: "";position: relative;border-style: solid;border-color: transparent transparent transparent #2FB685;border-width: 5px;height: 5px;width: 5px;line-height: 1;display: inline-block;margin-left: 6px;}
+
+.fondy-heading {margin: 70px 0;}
+.fondy-heading h3 {font-size: 32px;font-family: 'Changa One';margin: 0 0 24px;color: #333;}
+.fondy-heading h3 span {color: #2FB685;}
+.fondy-heading p {font-size: 24px;line-height: 32px;margin: 0 0 30px;}
+.fondy-heading .icon-btn{box-shadow: 1px 4px 12px rgb(47 182 133 / 80%);}
+
+.donate-info-section {display: flex;flex-wrap: wrap; width:100%;}
+.donate-info-left {width: 50%;padding-right: 10px;}
+.donate-info-right {width: 50%;padding-left: 10px;}
+.donate-info-box {box-shadow: 3px 5px 24px rgb(0 0 0 / 20%);border-radius: 8px;padding: 16px 53px; margin-bottom:30px;}
+.donate-info-right .donate-info-box {padding: 16px 32px;}
+.donate-info-box .donate-title {font-size:36px;line-height: 54px;text-align: center;font-family: 'Changa One';font-weight: normal;margin: 0 0 24px;}
+.donate-info-box .donate-title span {color: #2FB685; text-transform: uppercase;}
+
+.donate-info-box .donate-list {list-style-type: none;margin: 0;padding: 0;}
+.donate-info-box .donate-list > li {background: rgba(220, 248, 237, 0.7);padding: 8px 16px;border-radius: 8px;margin: 0 0 24px;}
+.donate-info-box .donate-list h4 {margin: 0;font-family: 'Changa', sans-serif;font-weight: 600;color: #008053;font-size: 24px;line-height: 32px;}
+.donate-info-box .donate-list h5{margin:15px 0 0;font-family: 'Changa', sans-serif;font-weight: 600;color: #333;font-size: 24px;line-height: 32px;}
+.donate-info-box .donate-list p {font-size: 20px;line-height: 32px;margin: 0; color: #333; word-break: break-all;}
+.donate-info-box .donate-list p + p{margin-top:20px;}
+
+
+
+.ukraine-info-section{display: flex; flex-direction: column; flex-wrap: wrap; width:100%;box-shadow: 3px 5px 24px rgb(0 0 0 / 20%);border-radius: 8px;padding: 16px 53px; margin-top:50px;}
+.ukraine-info-section .ukraine-wrapper {display: flex;margin: 0 -25px;flex-wrap: wrap;}
+.ukraine-info-box {margin-bottom:30px; width: 50%; padding: 0 25px;}
+.ukraine-info-section .ukraine-title {font-size: 40px;line-height: 1;margin: 30px 0 40px;color: #2FB685;font-family: 'Changa', sans-serif;font-weight: 800;}
+
+
+.ukraine-info-box .ukraine-list {list-style-type: none;margin: 0;padding: 0;}
+.ukraine-info-box .ukraine-list > li {background: rgba(220, 248, 237, 0.7);padding: 8px 16px;border-radius: 8px;margin: 0 0 24px;}
+.ukraine-info-box .ukraine-list h4 {margin: 0;font-family: 'Changa', sans-serif;font-weight: 600;color: #008053;font-size: 24px;line-height: 32px;}
+.ukraine-info-box .ukraine-list h5{margin:15px 0 0;font-family: 'Changa', sans-serif;font-weight: 600;color: #333;font-size: 24px;line-height: 32px;}
+.ukraine-info-box .ukraine-list p {font-size: 20px;line-height: 32px;margin: 0; color: #333; word-break: break-all;}
+.ukraine-info-box .ukraine-list p + p{margin-top:20px;}
+
+.ukraine-info-box:first-child .ukraine-list h5{color:#008053;}
+
+/* faq-section */
+.faq-section{padding-bottom:140px;}
+.faq-list-box {display: block;margin: 0 auto;box-shadow: 1px 5px 24px rgb(0 0 0 / 20%);border-radius: 8px;overflow: hidden;max-width: 1080px; background-color: rgba(210, 235, 213, 0.2);}
+.faq-que {position: relative;padding: 45px 120px 45px 0px;display: flex;align-items: center;font-family: 'Inter', sans-serif; cursor: pointer;}
+.faq-item{background: rgba(210, 235, 213, 0.2); transition: all 0.3s ease-out 0s;}
+.faq-item.up {background: rgba(47, 182, 133, 0.5);}
+.faq-que .faq-count {width: 170px;padding-left: 60px;font-size: 48px;font-weight: 700;color: rgba(101, 101, 101, 0.6);}
+.faq-que h4 {font-family: 'Inter', sans-serif;color: #333333;margin: 0;font-size: 32px;line-height: normal;font-weight: 700;}
+.faq-que .faq-icon {width: 48px;height: 48px;background: #fff;border-radius: 50%;position: absolute;right: 60px;top: 50%;transform: translateY(-50%); transition: all 0.3s ease-out 0s;}
+.faq-que .faq-icon:before {position: absolute;content: "";width: 14px;height: 2px;background: #333;left: 50%;top: 50%;margin-left: -7px; transition: all 0.3s ease-out 0s;}
+.faq-que .faq-icon:after {position: absolute;content: "";width: 2px;height: 14px;background: #333;left: 50%;top: 50%;margin-left: -1px;margin-top: -6px; transition: all 0.3s ease-out 0s;}
+.faq-ans {padding: 0px 120px 30px 170px;font-size: 20px;line-height: 28px; display:none; margin-top: -25px;}
+.faq-item.up .faq-que .faq-icon {background:#333;}
+.faq-item.up .faq-que .faq-icon:after,
+.faq-item.up .faq-que .faq-icon:before{background: #fff; transform: rotate(45deg);}
+/* footer css */
+.footer {background:#181818; padding:60px 0 55px; display: block;}
+.footer .footer-title {font-size: 32px;text-transform: uppercase;font-weight: normal;font-family: 'Changa One'; color: #fff; margin-bottom:25px;}
+.contact-address{margin:0;}
+.contact-address p {margin: 0;color: #fff;font-size: 24px;line-height: 1.4; margin: 0;}
+
+.footer-social {padding: 0;margin:60px 0 0;list-style-type: none;display: inline-block;width: 100%; }
+.footer-social li {display:inline-block;margin-right:20px;}
+.footer-social li a {display:inline-block;font-size: 28px;color: #2FB685;line-height:18px;}
+.footer-social li a:hover {color: #2f4a75;}
+
+.footer-bottom {text-align: center;color:rgba(255,255,255,0.7);border-top:1px solid rgba(255,255,255,0.2);margin-top: 30px;padding: 20px 0 0; font-size: 13px;}
+
+
+/*  */
+
+
+
+/* responsive design */
+@media (min-width: 1350px){
+    .container {max-width: 1330px;}
+}
+@media (max-width: 1199px) {
+    .header-button {padding-left: 50px;}
+    .caption_box h2 {font-size: 52px;}
+    .payment-box h4 {font-size: 14px;}
+}
+@media (min-width: 992px) {
+  
+}
+@media (max-width: 991px) {
+    .header-button {padding-left: 20px;}
+    .header .header-logo {max-width:20%;flex: 0 0 20%;     -ms-flex: 0 0 20%;}
+    .header .header-navigation {max-width: 80%;flex: 0 0 80%;     -ms-flex: 0 0 80%;}
+    .header .nav > li > a{font-size:16px; padding:48px 10px;}
+    .header-lang .lang-text {padding: 10px 22px 10px 10px;    font-size: 16px;}
+    .header-lang .lang-dropdown{padding:0 10px;}
+    .header-lang .lang-dropdown a {font-size: 16px;}
+
+    .main-banner-section > img{min-height: 550px;}    
+    .caption_box p {font-size: 18px;}
+    .caption_box h2 {font-size: 32px;}
+    .banner-caption .caption_box {max-width: 420px;}
+
+    .service-wrapper {margin-top: 0;}
+    .service-item .service-box p {font-size: 16px;}
+    .service-item .service-info {padding: 20px 20px;}
+
+    .section-title{margin-bottom:30px;}
+    .section-title h2{font-size:42px;}
+
+    .payment-list{flex-wrap: wrap; margin-bottom: -30px;}
+    .payment-list .payment-item {width: 33.33%;margin: 0 0 30px;}
+
+    .donate-info-left {width: 100%;padding-right: 0;}
+    .donate-info-box{padding: 16px 32px;}
+    .donate-info-right {width: 100%;padding-left: 0;}
+
+    .ukraine-info-section{padding: 16px 32px; margin-top: 30px;}
+    .ukraine-info-box {width: 100%;}
+    .ukraine-info-box:last-child{margin-bottom: 0;}
+
+    .faq-que .faq-count {width: 130px;padding-left: 30px;}
+    .faq-que .faq-icon{right: 30px;}
+    .faq-que{padding: 30px 90px 30px 0px;}
+    .faq-ans {padding: 0px 90px 30px 130px;}
+
+     
+}
+@media (min-width: 768px) {
+    /* menu css */
+    .navbar-nav .submenu {position: absolute;left: 0;top: 100%;z-index: 999;background: #002e22;padding: 0;margin: 0;list-style-type: none;min-width: 250px; visibility: hidden; opacity: 0; pointer-events: none; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s;}
+    .navbar-nav li:hover > .submenu{visibility: visible; opacity: 1; pointer-events: auto;}
+    /*.navbar-nav > li:hover > a{color: #58b146;}*/
+    .navbar-nav .submenu > li {display: inline-block;width: 100%;border-bottom: 1px solid #22493f; position: relative;}
+    .navbar-nav .submenu > li > a {display: inline-block;padding:3px 20px;color: rgba(255,255,255,0.9);font-size: 14px;text-transform: capitalize; width: 100%;}
+    .navbar-nav .submenu > li > a:hover,
+    .navbar-nav .submenu > li.active > a{background:#fff; color:#002e22; font-weight: 700}
+
+    .navbar-nav > li > .submenu {padding-top: 10px;left: -70%;}
+    .navbar-nav > li > .submenu:before {position: absolute;content: "";border-width: 8px;border-style: solid;border-color: transparent transparent #002e22;top: -16px;left: 50%;margin-left: -8px;}
+
+    .navbar-nav .submenu .submenu{position: absolute; left: 100%; top: -81px; background: transparent; min-width: 370px; padding-left: 15px;} 
+    .navbar-nav .submenu .submenu > li{border-bottom: 1px solid #cbd2d1;}
+    .navbar-nav .submenu .submenu > li > a {display: inline-block;padding: 3px 20px;background: #f4f4f4;color: #002e22;font-size: 14px;text-transform: capitalize;width: 100%;font-weight: 700; border-right: 1px solid #cbd2d1; border-left: 1px solid #cbd2d1;}
+    .navbar-nav .submenu .submenu > li > a:first-child{border-top: 1px solid #cbd2d1;}
+    .navbar-nav .submenu .submenu > li > a:hover{background:#002e22; color:rgba(255,255,255,0.9);}
+    .navbar-nav .submenu .submenu:after {position: absolute;left: 0;width: 16px;top: 81px;height: 26px;background: rgba(255,255,255,0.8);content: "";}
+    .navbar-nav .submenu .submenu:before{position: absolute;content: "";border-top: 1px solid #999;border-right: 1px solid #999;width: 20px;height: 20px;left: 5px;top: 84px;-webkit-transform: rotate(225deg); -moz-transform: rotate(225deg);transform: rotate(225deg);z-index: 1;} 
+}
+
+@media (max-width: 767px) {
+    /**/
+    .header{padding:13px 0;}
+    .header_row{display: inline-block;}
+    .header_row .header-logo{position:relative; width: 100%; display: inline-block; padding: 14px 0px}
+    .m-menu{background: transparent;border-radius: 0px;display: inline-block;position: absolute;height: 30px;padding: 0px;width:20px;cursor: pointer;z-index: 99;right: 15px;top:12px;}
+    .m-menu span {background:#2FB685;border-radius: 2px;display: block;height: 3px;margin: 0 0 5px;}
+    .m-menu span:nth-child(2){ opacity:1;}
+    .m-menu.open span:nth-child(2){ opacity:0;}
+    .m-menu span:last-child {transform: translate(0px, 0px) rotate(0deg); -webkit-transform: translate(0px, 0px) rotate(0deg); -moz-transform: translate(0px, 0px) rotate(0deg);}
+    .m-menu span:first-child {transform: translate(0px, 0px) rotate(0deg); -webkit-transform: translate(0px, 0px) rotate(0deg); -moz-transform: translate(0px, 0px) rotate(0deg);}  
+    .m-menu.open span:last-child {transform: translate(0px, -8px) rotate(-45deg); -webkit-transform: translate(0px, -8px) rotate(-45deg); -moz-transform: translate(0px, -8px) rotate(-45deg);}
+    .m-menu.open span:first-child {transform: translate(0px, 8px) rotate(45deg); -webkit-transform: translate(0px, 8px) rotate(45deg); -moz-transform: translate(0px, 8px) rotate(45deg);}
+
+    .header{transition: all 0.3s ease-in-out 0s;}
+    /*body{transition: all 0.3s ease-in-out 0s;overflow-x: hidden;}*/
+    .inner-banner{padding: 30px 0px;}
+    .inner-banner h1{font-size:18px;}
+    .service-carousel .service-item{width: 100%;}
+
+    .header-navigation .nav{position: fixed;background:#fff;width:305px; text-align: left; right: 0;top:68px;padding:22px 0px 15px;overflow: auto;bottom:0px;z-index: 9998;transform: translateX(305px); transition: all 0.3s ease-in-out 0s;}
+    .header-navigation.open .nav{transform: translateX(0px);}
+
+    .header .nav{text-align: left; display: block;}
+    .header .nav > li{display: inline-block;width: 100%;padding: 0;}
+    .header .nav > li > a{padding: 15px 20px; color: #333; font-size: 16px; display: inline-block; width: 100%;}
+    .header .nav > li.active > a {color: #2FB685;}
+    .header .nav > li .submenu{left:0px; -webkit-transition:none; -moz-transition:none; transition:none;}
+    .header .nav .submenu {background: #fff;display: none; padding:0;margin: 0;list-style-type: none; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s;}
+    .header .nav > li:hover > a{color: #2FB685;}
+    .header .nav .submenu > li {display: inline-block;width: 100%;border-bottom: 1px solid #2FB685; position: relative;}
+    .header .nav .submenu > li > a {display: inline-block;padding:8px 20px;color: rgba(255,255,255,0.9);font-size: 14px;text-transform: capitalize; width: 100%;}
+    
+    
+    .mobile-arrow:before {position: absolute;content: "";left: 50%;border-top: 2px solid #002e22;border-right: 2px solid #002e22;width: 10px;height: 10px;-webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); top: 50%;margin-top: -7px;margin-left: -6px;}
+    .mobile-arrow {position: absolute;right: 10px;top: 0;width: 30px;height: 48px;cursor: pointer; z-index: 9;}
+    .mobile-arrow.up{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);transform: rotate(180deg);}
+    .header .nav .submenu .mobile-arrow{height: 35px; background: #fff; right: 1px;}
+
+    .header-button .donate-btn{height: 40px;font-size: 14px;width: 140px;padding-left: 10px;}
+    .header-button .donate-btn .icon {width: 40px;}
+    .header-button .donate-btn .icon img{max-width:20px;}
+
+    .header-logo img {max-width: 100px;}
+    .header-button {padding-left: 10px;}
+    .header .header-navigation {padding-right: 50px;}
+    
+    .section{padding:30px 0px;}
+    .service-list .service-item{width:100%; margin-bottom:33px;}    
+    
+    .payment-list .payment-item {width: 50%;margin: 0 0 20px;padding: 0 10px;    }
+    .payment-list{margin:0 -10px;}
+    .section-title h2 {font-size: 32px;}
+
+    .fondy-heading {margin: 30px 0;}
+    .fondy-heading h3 {font-size: 24px;}
+    .fondy-heading p {font-size: 18px;line-height: 26px;}    
+    .icon-btn{height:50px;}
+    .icon-btn .icon img { max-height: 20px;}
+
+    .donate-info-box .donate-title {font-size: 24px;line-height: 30px;}
+    .donate-info-right .donate-info-box,
+    .donate-info-box {padding: 16px 16px;}
+    .donate-info-box .donate-list h5,
+    .donate-info-box .donate-list h4{font-size: 20px;line-height: 28px;}
+    .donate-info-box .donate-list p {font-size: 14px;line-height: 28px;}    
+
+    .ukraine-info-section .ukraine-title {font-size: 24px;margin: 20px 0 30px;}
+
+    .ukraine-info-box .ukraine-list h4,
+    .ukraine-info-box .ukraine-list h5{font-size: 20px;line-height: 28px;}
+    .ukraine-info-box .ukraine-list p {font-size: 14px;line-height: 28px;}    
+    .ukraine-info-box{padding: 0 0px;}
+    .ukraine-info-section{padding: 16px 16px;}
+    .ukraine-info-section .ukraine-wrapper{margin:0;}
+
+    .faq-que {padding:20px 40px 20px 0px;}
+    .faq-que .faq-count {width: 60px;padding-left: 10px;font-size: 24px;}
+    .faq-que h4{font-size:20px;}
+    .faq-que .faq-icon {right: 6px;width: 30px;height: 30px;}
+    .faq-ans {padding: 0px 10px 30px 60px;margin-top: 0;font-size: 14px;line-height: 24px;}
+
+    .contact-address p{font-size:16px;}
+    .footer {padding: 40px 0 35px;}
+    .footer .footer-title {font-size: 24px;margin-bottom: 20px;}
+    .footer-col.footer_contact {margin-top: 40px;}
+    .footer-logo img {max-width: 100px;}
+    .footer-social{margin-top:30px;}
+    .footer-social li img {max-width: 30px;}
+
+    .main-banner-section .banner-caption{    position: static;transform: none;background: #5b7a97;padding: 30px 0;margin-top: -1px;}
+    .main-banner-section > img {min-height: 1px;}
+    
+    
+    
+    
+    
+}
+
+@media (max-width: 575px) {
+  
+}
+@media (max-width: 479px) {
+ 
+}
